@@ -1,0 +1,2933 @@
+
+== Color Codes ==
+
+{| class="wikitable"
+! Code
+! Color
+|-
+| %GREEN%
+| [[File:Fontgreen.png]] (set item color)
+|-
+| %DGREEN%
+| [[File:Fontdgreen.png]]
+|-
+| %GOLD%
+| [[File:Fontgold.png]] (unique item color)
+|-
+| %TAN%
+| [[File:Fonttan.png]]
+|-
+| %BLUE%
+| Blue (magic item color)
+|-
+| %GRAY%
+| Gray (ethereal/socketed color)
+|-
+| %WHITE%
+| White
+|-
+| %BLACK%
+| Black (very hard to see)
+|-
+| %YELLOW%
+| Yellow (rare item color)
+|-
+| %ORANGE%
+| Orange (crafted item color)
+|-
+| %PURPLE%
+| Purple
+|-
+| %RED%
+| Red
+|}
+
+== Value References ==
+
+{| class="wikitable"
+! Code
+! Output
+! Usage
+|-
+| %PRICE%
+| Selling price of the item
+| ($%PRICE%) = ($100)
+|-
+| %ILVL%
+| Item level
+| {L%ILVL%} = {L99}
+|-
+| %SOCKETS%
+| Show the item's socket count
+| %SOCKETS%OS = 4OS
+|-
+| %CODE%
+| Show an item's code
+| ItemDisplay[]: %NAME% [%CODE%] = All items show their item code in square brackets []
+|-
+| %NAME%
+| Item name
+| ItemDisplay[]: %RED%* %NAME% = Display red asterix in front of all items
+|-
+| %CONTINUE%
+| Item name with previous changes
+| Used to apply multiple %NAME% rules. If two rules change the %NAME%, instead of 1 rule deciding the final name, you can use %CONTINUE% to edit the already edited %NAME%.
+|-
+| %RUNENAME%
+| Same as %NAME% but runes
+| ItemDisplay[r01]: %ORANGE%! %RUNENAME% = Display 'El rune' with orange exclamation point in front.
+|}
+
+== Item Tier Codes ==
+
+{| class="wikitable"
+! Code
+! Group
+|-
+| NORM
+| Normal
+|-
+| EXC
+| Exceptional
+|-
+| ELT
+| Elite
+|}
+
+== Item Quality Codes ==
+
+{| class="wikitable"
+! Code
+! Quality
+|-
+| INF
+| Inferior
+|-
+| SUP
+| Superior
+|-
+| MAG
+| Magic
+|-
+| RARE
+| Rare
+|-
+| SET
+| Set
+|-
+| UNI
+| Unique
+|-
+| NMAG
+| Non-magical (white/gray)
+|-
+| ETH
+| Ethereal
+|-
+| RW
+| Runeword
+|-
+|}
+
+== Class Specific Item Codes ==
+
+{| class="wikitable"
+! Code
+! Class Item
+|-
+| CL1
+| Druid pelts
+|-
+| CL2
+| Barbarian helmets
+|-
+| CL3
+| Paladin shields
+|-
+| CL4
+| Necromancer shields
+|-
+| CL5
+| Assassin weapons
+|-
+| CL6
+| Sorceress weapons
+|-
+| CL7
+| Amazon weapons
+|}
+
+== Weapon Groups ==
+
+{| class="wikitable"
+! Code
+! Group
+|-
+| WP1
+| Axes
+|-
+| WP2
+| Maces
+|-
+| WP3
+| Swords
+|-
+| WP4
+| Daggers
+|-
+| WP5
+| Throwing Weapons
+|-
+| WP6
+| Javelins
+|-
+| WP7
+| Spears
+|-
+| WP8
+| Polearms
+|-
+| WP9
+| Bows
+|-
+| WP10
+| Crossbows
+|-
+| WP11
+| Staves
+|-
+| WP12
+| Wands
+|-
+| WP13
+| Scepters
+|-
+| WEAPON
+| All weapons
+|}
+
+== Armor Groups ==
+
+{| class="wikitable"
+! Code
+! Groups
+|-
+| EQ1
+| Helmets
+|-
+| EQ2
+| Body Armor
+|-
+| EQ3
+| Shields
+|-
+| EQ4
+| Gloves
+|-
+| EQ5
+| Boots
+|-
+| EQ6
+| Belts
+|-
+| EQ7
+| Circlets
+|-
+| ARMOR
+| All armors
+|}
+
+== Item Codes ==
+
+{| class="wikitable"
+! Code
+! Item
+|-
+| key
+| Keys (locked chests)
+|-
+| vps
+| Stamina Potion
+|-
+| yps
+| Antidote Potion
+|-
+| rvs
+| Rejuv Potion
+|-
+| rvl
+| Full Rejuv Potion
+|-
+| wms
+| Thawing Potion
+|-
+| tbk
+| Town Portal Book
+|-
+| ibk
+| Identify Book
+|-
+| amu
+| amulet
+|-
+| vip
+| viper amulet
+|-
+| rin
+| ring
+|-
+| GOLD
+| gold
+|-
+| bks
+| Bark Scroll
+|-
+| bkd
+| deciphered Bark Scroll
+|-
+| aqv
+| Rusted Arrows
+|-
+| tch
+| Torch
+|-
+| cqv
+| Rusted Bolts
+|-
+| tsc
+| Town Portal Scroll
+|-
+| isc
+| Identify Scroll
+|-
+| j34
+| jade figurine
+|-
+| g34
+| gold bird
+|-
+| bbb
+| lam esen's tome
+|-
+| box
+| Horadric Cube
+|-
+| tr1
+| Scroll of Horadric Quest Info
+|-
+| mss
+| Mephisto SoulStone
+|-
+| ass
+| Book of Skill
+|-
+| qey
+| KhalimEye
+|-
+| qhr
+| KhalimHeart
+|-
+| qbr
+| KhalimBrain
+|-
+| ear
+| Player Ear
+|-
+| gcv
+| Chipped Amethyst
+|-
+| gfv
+| Flawed Amethyst
+|-
+| gsv
+| Amethyst
+|-
+| gzv
+| Flawless Amethyst
+|-
+| gpv
+| Perfect Amethyst
+|-
+| gcy
+| Chipped Topaz
+|-
+| gfy
+| Flawed Topaz
+|-
+| gsy
+| Topaz
+|-
+| gly
+| Flawless Topaz
+|-
+| gpy
+| Perfect Topaz
+|-
+| gcb
+| Chipped Saphire
+|-
+| gfb
+| Flawed Saphire
+|-
+| gsb
+| Saphire
+|-
+| glb
+| Flawless Saphire
+|-
+| gpb
+| Perfect Saphire
+|-
+| gcg
+| Chipped Emerald
+|-
+| gfg
+| Flawed Emerald
+|-
+| gsg
+| Emerald
+|-
+| glg
+| Flawless Emerald
+|-
+| gpg
+| Perfect Emerald
+|-
+| gcr
+| Chipped Ruby
+|-
+| gfr
+| Flawed Ruby
+|-
+| gsr
+| Ruby
+|-
+| glr
+| Flawless Ruby
+|-
+| gpr
+| Perfect Ruby
+|-
+| gcw
+| Chipped Diamond
+|-
+| gfw
+| Flawed Diamond
+|-
+| gsw
+| Diamond
+|-
+| glw
+| Flawless Diamond
+|-
+| gpw
+| Perfect Diamond
+|-
+| hp1
+| Lesser Healing Potion
+|-
+| hp2
+| Light Healing Potion
+|-
+| hp3
+| Healing Potion
+|-
+| hp4
+| Strong Healing Potion
+|-
+| hp5
+| Greater Healing Potion
+|-
+| mp1
+| Lesser Mana Potion
+|-
+| mp2
+| Light Mana Potion
+|-
+| mp3
+| Mana Potion
+|-
+| mp4
+| Strong Mana Potion
+|-
+| mp5
+| Greater Mana Potion
+|-
+| skc
+| Chipped Skull
+|-
+| skf
+| Flawed Skull
+|-
+| sku
+| Skull
+|-
+| skl
+| Flawless Skull
+|-
+| skz
+| Perfect Skull
+|-
+| cm1
+| Small Charm
+|-
+| cm2
+| Large Charm
+|-
+| cm3
+| Grand Charm
+|-
+| r01
+| El Rune
+|-
+| r02
+| Eld Rune
+|-
+| r03
+| Tir Rune
+|-
+| r04
+| Nef Rune
+|-
+| r05
+| Eth Rune
+|-
+| r06
+| Ith Rune
+|-
+| r07
+| Tal Rune
+|-
+| r08
+| Ral Rune
+|-
+| r09
+| Ort Rune
+|-
+| r10
+| Thul Rune
+|-
+| r11
+| Amn Rune
+|-
+| r12
+| Sol Rune
+|-
+| r13
+| Shael Rune
+|-
+| r14
+| Dol Rune
+|-
+| r15
+| Hel Rune
+|-
+| r16
+| Io Rune
+|-
+| r17
+| Lum Rune
+|-
+| r18
+| Ko Rune
+|-
+| r19
+| Fal Rune
+|-
+| r20
+| Lem Rune
+|-
+| r21
+| Pul Rune
+|-
+| r22
+| Um Rune
+|-
+| r23
+| Mal Rune
+|-
+| r24
+| Ist Rune
+|-
+| r25
+| Gul Rune
+|-
+| r26
+| Vex Rune
+|-
+| r27
+| Ohm Rune
+|-
+| r28
+| Lo Rune
+|-
+| r29
+| Sur Rune
+|-
+| r30
+| Ber Rune
+|-
+| r31
+| Jah Rune
+|-
+| r32
+| Cham Rune
+|-
+| r33
+| Zod Rune
+|-
+| jew
+| Jewel
+|-
+| tr2
+| Scroll of Malah - Boost Resistances
+|-
+| pk1
+| Pandemonium Key 1
+|-
+| pk2
+| Pandemonium Key 2
+|-
+| pk3
+| Pandemonium Key 3
+|-
+| dhn
+| Diablo's Horn
+|-
+| bey
+| Baal's Eye
+|-
+| mbr
+| Mephisto's Brain
+|-
+| toa
+| Token of Absolution
+|-
+| tes
+| Twisted Essence of Suffering
+|-
+| ceh
+| Charged Essense of Hatred
+|-
+| bet
+| Burning Essence of Terror
+|-
+| fed
+| Festering Essence of Destruction
+|-
+| std
+| Standard
+|-
+| cx5
+| Orb of Corruption
+|-
+| cm4
+| Hoardrim Sigil (enchant charm)
+|-
+| aq2
+| Arrows
+|-
+| cq2
+| Bolts
+|-
+| ma1
+| Dark Cavern Relic - Removed Patch 12
+|-
+| ma2
+| Forgotten Desert - Tier 4
+|-
+| ma3
+| Abandoned Precinct Relic - Removed Patch 12
+|-
+| ma4
+| Desecrated Temple Relic - Tier 1
+|-
+| ma5
+| Frigid Plateau Relic - Tier 2
+|-
+| ma6
+| Runed Chapel - Tier 3
+|-
+| hax
+| Hand Axe
+|-
+| axe
+| Axe
+|-
+| 2ax
+| Double Axe
+|-
+| mpi
+| Military Pick
+|-
+| wax
+| War Axe
+|-
+| lax
+| Large Axe
+|-
+| bax
+| Broad Axe
+|-
+| btx
+| Battle Axe
+|-
+| gax
+| Great Axe
+|-
+| gix
+| Giant Axe
+|-
+| wnd
+| Wand
+|-
+| ywn
+| Yew Wand
+|-
+| bwn
+| Bone Wand
+|-
+| gwn
+| Grim Wand
+|-
+| clb
+| Club
+|-
+| scp
+| Scepter
+|-
+| gsc
+| Grand Scepter
+|-
+| wsp
+| War Scepter
+|-
+| spc
+| Spiked Club
+|-
+| mac
+| Mace
+|-
+| mst
+| Morning Star
+|-
+| fla
+| Flail
+|-
+| whm
+| War Hammer
+|-
+| mau
+| Maul
+|-
+| gma
+| Great Maul
+|-
+| ssd
+| Short Sword
+|-
+| scm
+| Scimitar
+|-
+| sbr
+| Saber
+|-
+| flc
+| Falchion
+|-
+| crs
+| Crystal Sword
+|-
+| bsd
+| Broad Sword
+|-
+| lsd
+| Long Sword
+|-
+| wsd
+| War Sword
+|-
+| 2hs
+| Two-Handed Sword
+|-
+| clm
+| Claymore
+|-
+| gis
+| Giant Sword
+|-
+| bsw
+| Bastard Sword
+|-
+| flb
+| Flamberge
+|-
+| gsd
+| Great Sword
+|-
+| dgr
+| Dagger
+|-
+| dir
+| Dirk
+|-
+| kri
+| Kriss
+|-
+| bld
+| Blade
+|-
+| tkf
+| Throwing Knife
+|-
+| tax
+| Throwing Axe
+|-
+| bkf
+| Balanced Knife
+|-
+| bal
+| Balanced Axe
+|-
+| jav
+| Javelin
+|-
+| pil
+| Pilum
+|-
+| ssp
+| Short Spear
+|-
+| glv
+| Glaive
+|-
+| tsp
+| Throwing Spear
+|-
+| spr
+| Spear
+|-
+| tri
+| Trident
+|-
+| brn
+| Brandistock
+|-
+| spt
+| Spetum
+|-
+| pik
+| Pike
+|-
+| bar
+| Bardiche
+|-
+| vou
+| Voulge
+|-
+| scy
+| Scythe
+|-
+| pax
+| Poleaxe
+|-
+| hal
+| Halberd
+|-
+| wsc
+| War Scythe
+|-
+| sst
+| Short Staff
+|-
+| lst
+| Long Staff
+|-
+| cst
+| Gnarled Staff
+|-
+| bst
+| Battle Staff
+|-
+| wst
+| War Staff
+|-
+| sbw
+| Short Bow
+|-
+| hbw
+| Hunter's Bow
+|-
+| lbw
+| Long Bow
+|-
+| cbw
+| Composite Bow
+|-
+| sbb
+| Short Battle Bow
+|-
+| lbb
+| Long Battle Bow
+|-
+| swb
+| Short War Bow
+|-
+| lwb
+| Long War Bow
+|-
+| lxb
+| Light Crossbow
+|-
+| mxb
+| Crossbow
+|-
+| hxb
+| Heavy Crossbow
+|-
+| rxb
+| Repeating Crossbow
+|-
+| gps
+| Rancid Gas Potion
+|-
+| ops
+| Oil Potion
+|-
+| gpm
+| Choking Gas Potion
+|-
+| opm
+| Exploding Potion
+|-
+| gpl
+| Strangling Gas Potion
+|-
+| opl
+| Fulminating Potion
+|-
+| d33
+| decoy dagger
+|-
+| g33
+| Gidbinn
+|-
+| leg
+| Wirt's Leg
+|-
+| hdm
+| Horadric Malus
+|-
+| hfh
+| Hellforge Hammer
+|-
+| hst
+| Horadric Staff
+|-
+| msf
+| Staff of the Kings
+|-
+| 9ha
+| Hatchet
+|-
+| 9ax
+| Cleaver
+|-
+| 92a
+| Twin Axe
+|-
+| 9mp
+| Crowbill
+|-
+| 9wa
+| Naga
+|-
+| 9la
+| Military Axe
+|-
+| 9ba
+| Bearded Axe
+|-
+| 9bt
+| Tabar
+|-
+| 9ga
+| Gothic Axe
+|-
+| 9gi
+| Ancient Axe
+|-
+| 9wn
+| Burnt Wand
+|-
+| 9yw
+| Petrified Wand
+|-
+| 9bw
+| Tomb Wand
+|-
+| 9gw
+| Grave Wand
+|-
+| 9cl
+| Cudgel
+|-
+| 9sc
+| Rune Scepter
+|-
+| 9qs
+| Holy Water Sprinkler
+|-
+| 9ws
+| Divine Scepter
+|-
+| 9sp
+| Barbed Club
+|-
+| 9ma
+| Flanged Mace
+|-
+| 9mt
+| Jagged Star
+|-
+| 9fl
+| Knout
+|-
+| 9wh
+| Battle Hammer
+|-
+| 9m9
+| War Club
+|-
+| 9gm
+| Martel de Fer
+|-
+| 9ss
+| Gladius
+|-
+| 9sm
+| Cutlass
+|-
+| 9sb
+| Shamshir
+|-
+| 9fc
+| Tulwar
+|-
+| 9cr
+| Dimensional Blade
+|-
+| 9bs
+| Battle Sword
+|-
+| 9ls
+| Rune Sword
+|-
+| 9wd
+| Ancient Sword
+|-
+| 92h
+| Espadon
+|-
+| 9cm
+| Dacian Falx
+|-
+| 9gs
+| Tusk Sword
+|-
+| 9b9
+| Gothic Sword
+|-
+| 9fb
+| Zweihander
+|-
+| 9gd
+| Executioner Sword
+|-
+| 9dg
+| Poignard
+|-
+| 9di
+| Rondel
+|-
+| 9kr
+| Cinquedeas
+|-
+| 9bl
+| Stiletto
+|-
+| 9tk
+| Battle Dart
+|-
+| 9ta
+| Francisca
+|-
+| 9bk
+| War Dart
+|-
+| 9b8
+| Hurlbat
+|-
+| 9ja
+| War Javelin
+|-
+| 9pi
+| Great Pilum
+|-
+| 9s9
+| Simbilan
+|-
+| 9gl
+| Spiculum
+|-
+| 9ts
+| Harpoon
+|-
+| 9sr
+| War Spear
+|-
+| 9tr
+| Fuscina
+|-
+| 9br
+| War Fork
+|-
+| 9st
+| Yari
+|-
+| 9p9
+| Lance
+|-
+| 9b7
+| Lochaber Axe
+|-
+| 9vo
+| Bill
+|-
+| 9s8
+| Battle Scythe
+|-
+| 9pa
+| Partizan
+|-
+| 9h9
+| Bec-de-Corbin
+|-
+| 9wc
+| Grim Scythe
+|-
+| 8ss
+| Jo Staff
+|-
+| 8ls
+| Quarterstaff
+|-
+| 8cs
+| Cedar Staff
+|-
+| 8bs
+| Gothic Staff
+|-
+| 8ws
+| Rune Staff
+|-
+| 8sb
+| Edge Bow
+|-
+| 8hb
+| Razor Bow
+|-
+| 8lb
+| Cedar Bow
+|-
+| 8cb
+| Double Bow
+|-
+| 8s8
+| Short Siege Bow
+|-
+| 8l8
+| Long Siege Bow
+|-
+| 8sw
+| Rune Bow
+|-
+| 8lw
+| Gothic Bow
+|-
+| 8lx
+| Arbalest
+|-
+| 8mx
+| Siege Crossbow
+|-
+| 8hx
+| Balista
+|-
+| 8rx
+| Chu-Ko-Nu
+|-
+| qf1
+| KhalimFlail
+|-
+| qf2
+| SuperKhalimFlail
+|-
+| ktr
+| Katar
+|-
+| wrb
+| Wrist Blade
+|-
+| axf
+| Hatchet Hands
+|-
+| ces
+| Cestus
+|-
+| clw
+| Claws
+|-
+| btl
+| Blade Talons
+|-
+| skr
+| Scissors Katar
+|-
+| 9ar
+| Quhab
+|-
+| 9wb
+| Wrist Spike
+|-
+| 9xf
+| Fascia
+|-
+| 9cs
+| Hand Scythe
+|-
+| 9lw
+| Greater Claws
+|-
+| 9tw
+| Greater Talons
+|-
+| 9qr
+| Scissors Quhab
+|-
+| 7ar
+| Suwayyah
+|-
+| 7wb
+| Wrist Sword
+|-
+| 7xf
+| War Fist
+|-
+| 7cs
+| Battle Cestus
+|-
+| 7lw
+| Feral Claws
+|-
+| 7tw
+| Runic Talons
+|-
+| 7qr
+| Scissors Suwayyah
+|-
+| 7ha
+| Tomahawk
+|-
+| 7ax
+| Small Crescent
+|-
+| 72a
+| Ettin Axe
+|-
+| 7mp
+| War Spike
+|-
+| 7wa
+| Berserker Axe
+|-
+| 7la
+| Feral Axe
+|-
+| 7ba
+| Silver Edged Axe
+|-
+| 7bt
+| Decapitator
+|-
+| 7ga
+| Champion Axe
+|-
+| 7gi
+| Glorious Axe
+|-
+| 7wn
+| Polished Wand
+|-
+| 7yw
+| Ghost Wand
+|-
+| 7bw
+| Lich Wand
+|-
+| 7gw
+| Unearthed Wand
+|-
+| 7cl
+| Truncheon
+|-
+| 7sc
+| Mighty Scepter
+|-
+| 7qs
+| Seraph Rod
+|-
+| 7ws
+| Caduceus
+|-
+| 7sp
+| Tyrant Club
+|-
+| 7ma
+| Reinforced Mace
+|-
+| 7mt
+| Devil Star
+|-
+| 7fl
+| Scourge
+|-
+| 7wh
+| Legendary Mallet
+|-
+| 7m7
+| Ogre Maul
+|-
+| 7gm
+| Thunder Maul
+|-
+| 7ss
+| Falcata
+|-
+| 7sm
+| Ataghan
+|-
+| 7sb
+| Elegant Blade
+|-
+| 7fc
+| Hydra Edge
+|-
+| 7cr
+| Phase Blade
+|-
+| 7bs
+| Conquest Sword
+|-
+| 7ls
+| Cryptic Sword
+|-
+| 7wd
+| Mythical Sword
+|-
+| 72h
+| Legend Sword
+|-
+| 7cm
+| Highland Blade
+|-
+| 7gs
+| Balrog Blade
+|-
+| 7b7
+| Champion Sword
+|-
+| 7fb
+| Colossal Sword
+|-
+| 7gd
+| Colossus Blade
+|-
+| 7dg
+| Bone Knife
+|-
+| 7di
+| Mithral Point
+|-
+| 7kr
+| Fanged Knife
+|-
+| 7bl
+| Legend Spike
+|-
+| 7tk
+| Flying Knife
+|-
+| 7ta
+| Flying Axe
+|-
+| 7bk
+| Winged Knife
+|-
+| 7b8
+| Winged Axe
+|-
+| 7ja
+| Hyperion Javelin
+|-
+| 7pi
+| Stygian Pilum
+|-
+| 7s7
+| Balrog Spear
+|-
+| 7gl
+| Ghost Glaive
+|-
+| 7ts
+| Winged Harpoon
+|-
+| 7sr
+| Hyperion Spear
+|-
+| 7tr
+| Stygian Pike
+|-
+| 7br
+| Mancatcher
+|-
+| 7st
+| Ghost Spear
+|-
+| 7p7
+| War Pike
+|-
+| 7o7
+| Ogre Axe
+|-
+| 7vo
+| Colossus Voulge
+|-
+| 7s8
+| Thresher
+|-
+| 7pa
+| Cryptic Axe
+|-
+| 7h7
+| Great Poleaxe
+|-
+| 7wc
+| Giant Thresher
+|-
+| 6ss
+| Walking Stick
+|-
+| 6ls
+| Stalagmite
+|-
+| 6cs
+| Elder Staff
+|-
+| 6bs
+| Shillelah
+|-
+| 6ws
+| Archon Staff
+|-
+| 6sb
+| Spider Bow
+|-
+| 6hb
+| Blade Bow
+|-
+| 6lb
+| Shadow Bow
+|-
+| 6cb
+| Great Bow
+|-
+| 6s7
+| Diamond Bow
+|-
+| 6l7
+| Crusader Bow
+|-
+| 6sw
+| Ward Bow
+|-
+| 6lw
+| Hydra Bow
+|-
+| 6lx
+| Pellet Bow
+|-
+| 6mx
+| Gorgon Crossbow
+|-
+| 6hx
+| Colossus Crossbow
+|-
+| 6rx
+| Demon Crossbow
+|-
+| ob1
+| Eagle Orb
+|-
+| ob2
+| Sacred Globe
+|-
+| ob3
+| Smoked Sphere
+|-
+| ob4
+| Clasped Orb
+|-
+| ob5
+| Jared's Stone
+|-
+| am1
+| Stag Bow
+|-
+| am2
+| Reflex Bow
+|-
+| am3
+| Maiden Spear
+|-
+| am4
+| Maiden Pike
+|-
+| am5
+| Maiden Javelin
+|-
+| ob6
+| Glowing Orb
+|-
+| ob7
+| Crystalline Globe
+|-
+| ob8
+| Cloudy Sphere
+|-
+| ob9
+| Sparkling Ball
+|-
+| oba
+| Swirling Crystal
+|-
+| am6
+| Ashwood Bow
+|-
+| am7
+| Ceremonial Bow
+|-
+| am8
+| Ceremonial Spear
+|-
+| am9
+| Ceremonial Pike
+|-
+| ama
+| Ceremonial Javelin
+|-
+| obb
+| Heavenly Stone
+|-
+| obc
+| Eldritch Orb
+|-
+| obd
+| Demon Heart
+|-
+| obe
+| Vortex Orb
+|-
+| obf
+| Dimensional Shard
+|-
+| amb
+| Matriarchal Bow
+|-
+| amc
+| Grand Matron Bow
+|-
+| amd
+| Matriarchal Spear
+|-
+| ame
+| Matriarchal Pike
+|-
+| amf
+| MatriarchalJavelin
+|-
+| cap
+| Cap/hat
+|-
+| skp
+| Skull Cap
+|-
+| hlm
+| Helm
+|-
+| fhl
+| Full Helm
+|-
+| ghm
+| Great Helm
+|-
+| crn
+| Crown
+|-
+| msk
+| Mask
+|-
+| qui
+| Quilted Armor
+|-
+| lea
+| Leather Armor
+|-
+| hla
+| Hard Leather Armor
+|-
+| stu
+| Studded Leather
+|-
+| rng
+| Ring Mail
+|-
+| scl
+| Scale Mail
+|-
+| chn
+| Chain Mail
+|-
+| brs
+| Breast Plate
+|-
+| spl
+| Splint Mail
+|-
+| plt
+| Plate Mail
+|-
+| fld
+| Field Plate
+|-
+| gth
+| Gothic Plate
+|-
+| ful
+| Full Plate Mail
+|-
+| aar
+| Ancient Armor
+|-
+| ltp
+| Light Plate
+|-
+| buc
+| Buckler
+|-
+| sml
+| Small Shield
+|-
+| lrg
+| Large Shield
+|-
+| kit
+| Kite Shield
+|-
+| tow
+| Tower Shield
+|-
+| gts
+| Gothic Shield
+|-
+| lgl
+| Leather Gloves
+|-
+| vgl
+| Heavy Gloves
+|-
+| mgl
+| Bracers
+|-
+| tgl
+| Light Gauntlets
+|-
+| hgl
+| Gauntlets
+|-
+| lbt
+| Leather Boots
+|-
+| vbt
+| Heavy Boots
+|-
+| mbt
+| Chain Boots
+|-
+| tbt
+| Light Plate Boots
+|-
+| hbt
+| Plate Boots
+|-
+| lbl
+| Sash(L)
+|-
+| vbl
+| Light Belt
+|-
+| mbl
+| Belt(M)
+|-
+| tbl
+| Heavy Belt
+|-
+| hbl
+| Girdle(H)
+|-
+| bhm
+| Bone Helm
+|-
+| bsh
+| Bone Shield
+|-
+| spk
+| Spiked Shield
+|-
+| xap
+| War Hat
+|-
+| xkp
+| Sallet
+|-
+| xlm
+| Casque
+|-
+| xhl
+| Basinet
+|-
+| xhm
+| Winged Helm
+|-
+| xrn
+| Grand Crown
+|-
+| xsk
+| Death Mask
+|-
+| xui
+| Ghost Armor
+|-
+| xea
+| Serpentskin Armor
+|-
+| xla
+| Demonhide Armor
+|-
+| xtu
+| Trellised Armor
+|-
+| xng
+| Linked Mail
+|-
+| xcl
+| Tigulated Mail
+|-
+| xhn
+| Mesh Armor
+|-
+| xrs
+| Cuirass
+|-
+| xpl
+| Russet Armor
+|-
+| xlt
+| Templar Coat
+|-
+| xld
+| Sharktooth Armor
+|-
+| xth
+| Embossed Plate
+|-
+| xul
+| Chaos Armor
+|-
+| xar
+| Ornate Armor
+|-
+| xtp
+| Mage Plate
+|-
+| xuc
+| Defender
+|-
+| xml
+| Round Shield
+|-
+| xrg
+| Scutum
+|-
+| xit
+| Dragon Shield
+|-
+| xow
+| Pavise
+|-
+| xts
+| Ancient Shield
+|-
+| xlg
+| Demonhide Gloves
+|-
+| xvg
+| Sharkskin Gloves
+|-
+| xmg
+| Heavy Bracers
+|-
+| xtg
+| Battle Gauntlets
+|-
+| xhg
+| War Gauntlets
+|-
+| xlb
+| Demonhide Boots
+|-
+| xvb
+| Sharkskin Boots
+|-
+| xmb
+| Mesh Boots
+|-
+| xtb
+| Battle Boots
+|-
+| xhb
+| War Boots
+|-
+| zlb
+| Demonhide Sash
+|-
+| zvb
+| Sharkskin Belt
+|-
+| zmb
+| Mesh Belt
+|-
+| ztb
+| Battle Belt
+|-
+| zhb
+| War Belt
+|-
+| xh9
+| Grim Helm
+|-
+| xsh
+| Grim Shield
+|-
+| xpk
+| Barbed Shield
+|-
+| dr1
+| Wolf Head
+|-
+| dr2
+| Hawk Helm
+|-
+| dr3
+| Antlers
+|-
+| dr4
+| Falcon Mask
+|-
+| dr5
+| Spirit Mask
+|-
+| ba1
+| Jawbone Cap
+|-
+| ba2
+| Fanged Helm
+|-
+| ba3
+| Horned Helm
+|-
+| ba4
+| Assault Helmet
+|-
+| ba5
+| Avenger Guard
+|-
+| pa1
+| Targe
+|-
+| pa2
+| Rondache
+|-
+| pa3
+| Heraldic Shield
+|-
+| pa4
+| Aerin Shield
+|-
+| pa5
+| Crown Shield
+|-
+| ne1
+| Preserved Head
+|-
+| ne2
+| Zombie Head
+|-
+| ne3
+| Unraveller Head
+|-
+| ne4
+| Gargoyle Head
+|-
+| ne5
+| Demon Head
+|-
+| ci0
+| Circlet
+|-
+| ci1
+| Coronet
+|-
+| ci2
+| Tiara
+|-
+| ci3
+| Diadem
+|-
+| uap
+| Shako
+|-
+| ukp
+| Hydraskull
+|-
+| ulm
+| Armet
+|-
+| uhl
+| Giant Conch
+|-
+| uhm
+| Spired Helm
+|-
+| urn
+| Corona
+|-
+| usk
+| Demonhead
+|-
+| uui
+| Dusk Shroud
+|-
+| uea
+| Wyrmhide
+|-
+| ula
+| Scarab Husk
+|-
+| utu
+| Wire Fleece
+|-
+| ung
+| Diamond Mail
+|-
+| ucl
+| Loricated Mail
+|-
+| uhn
+| Boneweave
+|-
+| urs
+| Great Hauberk
+|-
+| upl
+| Balrog Skin
+|-
+| uld
+| Kraken Shell
+|-
+| ult
+| Hellforged Plate
+|-
+| uth
+| Lacquered Plate
+|-
+| uul
+| Shadow Plate
+|-
+| uar
+| Sacred Armor
+|-
+| utp
+| Archon Plate
+|-
+| uuc
+| Heater
+|-
+| uml
+| Luna
+|-
+| urg
+| Hyperion
+|-
+| uit
+| Monarch
+|-
+| uow
+| Aegis
+|-
+| uts
+| Ward
+|-
+| ulg
+| Bramble Mitts
+|-
+| uvg
+| Vampirebone Gloves
+|-
+| umg
+| Vambraces
+|-
+| utg
+| Crusader Gauntlets
+|-
+| uhg
+| Ogre Gauntlets
+|-
+| ulb
+| Wyrmhide Boots
+|-
+| uvb
+| Scarabshell Boots
+|-
+| umb
+| Boneweave Boots
+|-
+| utb
+| Mirrored Boots
+|-
+| uhb
+| Myrmidon Greaves
+|-
+| ulc
+| Spiderweb Sash
+|-
+| uvc
+| Vampirefang Belt
+|-
+| umc
+| Mithril Coil
+|-
+| utc
+| Troll Belt
+|-
+| uhc
+| Colossus Girdle
+|-
+| uh9
+| Bone Visage
+|-
+| ush
+| Troll Nest
+|-
+| upk
+| Blade Barrier
+|-
+| dr6
+| Alpha Helm
+|-
+| dr7
+| Griffon Headress
+|-
+| dr8
+| Hunter's Guise
+|-
+| dr9
+| Sacred Feathers
+|-
+| dra
+| Totemic Mask
+|-
+| ba6
+| Jawbone Visor
+|-
+| ba7
+| Lion Helm
+|-
+| ba8
+| Rage Mask
+|-
+| ba9
+| Savage Helmet
+|-
+| baa
+| Slayer Guard
+|-
+| pa6
+| Akaran Targe
+|-
+| pa7
+| Akaran Rondache
+|-
+| pa8
+| Protector Shield
+|-
+| pa9
+| Gilded Shield
+|-
+| paa
+| Royal Shield
+|-
+| ne6
+| Mummified Trophy
+|-
+| ne7
+| Fetish Trophy
+|-
+| ne8
+| Sexton Trophy
+|-
+| ne9
+| Cantor Trophy
+|-
+| nea
+| Hierophant Trophy
+|-
+| drb
+| Blood Spirt
+|-
+| drc
+| Sun Spirit
+|-
+| drd
+| Earth Spirit
+|-
+| dre
+| Sky Spirit
+|-
+| drf
+| Dream Spirit
+|-
+| bab
+| Carnage Helm
+|-
+| bac
+| Fury Visor
+|-
+| bad
+| Destroyer Helm
+|-
+| bae
+| Conquerer Crown
+|-
+| baf
+| Guardian Crown
+|-
+| pab
+| Sacred Targe
+|-
+| pac
+| Sacred Rondache
+|-
+| pad
+| Ancient Shield
+|-
+| pae
+| Zakarum Shield
+|-
+| paf
+| Vortex Shield
+|-
+| neb
+| Minion Skull
+|-
+| neg
+| Hellspawn Skull
+|-
+| ned
+| Overseer Skull
+|-
+| nee
+| Succubae Skull
+|-
+| nef
+| Bloodlord Skull
+|-
+| cx7
+| Key of Chaos
+|-
+| cx6
+| Diablo's Soulstone
+|-
+| cx8
+| Orb of Enchantment
+|-
+| ma6
+| T3 Relic
+|-
+| xyz
+| Potion of Life (Alkor)
+|}
+
+Note: a more complete list of item codes can be found [http://www.gmstemple.com/Diablo2/itemcodes.html here].
+
+== Item Stat & Char Stat Codes ==
+
+Item Stat Codes references the stat on an item.
+Char Stat Codes references the stat on your character.
+
+{| class="wikitable"
+! Item Stat Code
+! Character Stat Code
+! Stat
+|-
+| ITEMSTAT0
+| CHARSTAT0
+| strength
+|-
+| ITEMSTAT1
+| CHARSTAT1
+| energy
+|-
+| ITEMSTAT2
+| CHARSTAT2
+| dexterity
+|-
+| ITEMSTAT3
+| CHARSTAT3
+| vitality
+|-
+| 
+| CHARSTAT4
+| statpts (number of unspent stat points)
+|-
+| 
+| CHARSTAT5
+| newskills (number of unspent skill points)
+|-
+| 
+| CHARSTAT6
+| hitpoints (current life)
+|-
+| ITEMSTAT7
+| CHARSTAT7
+| maxhp
+|-
+| 
+| CHARSTAT8
+| mana (current mana)
+|-
+| ITEMSTAT9
+| CHARSTAT9
+| maxmana
+|-
+| 
+| CHARSTAT10
+| stamina (current stamina)
+|-
+| ITEMSTAT11
+| CHARSTAT11
+| maxstamina
+|-
+| 
+| CLVL
+| level
+|-
+| 
+| CHARSTAT13
+| experience (current experience)
+|-
+| 
+| CHARSTAT14
+| gold (gold on character)
+|-
+| 
+| CHARSTAT15
+| goldbank (gold in stash)
+|-
+| ITEMSTAT16
+| 
+| item_armor_percent
+|-
+| ITEMSTAT17
+| 
+| item_maxdamage_percent
+|-
+| ITEMSTAT18
+| 
+| item_mindamage_percent
+|-
+| ITEMSTAT19
+| 
+| tohit
+|-
+| ITEMSTAT20
+| 
+| toblock
+|-
+| ITEMSTAT21
+| 
+| mindamage
+|-
+| ITEMSTAT22
+| 
+| maxdamage
+|-
+| ITEMSTAT23
+| 
+| secondary_mindamage
+|-
+| ITEMSTAT24
+| 
+| secondary_maxdamage
+|-
+| ITEMSTAT25
+| 
+| damagepercent
+|-
+| ITEMSTAT26
+| 
+| manarecovery
+|-
+| ITEMSTAT27
+| 
+| manarecoverybonus
+|-
+| ITEMSTAT28
+| 
+| staminarecoverybonus
+|-
+| 
+| CHARSTAT29
+| lastexp
+|-
+| 
+| CHARSTAT30
+| nextexp
+|-
+| ITEMSTAT31
+| 
+| armorclass
+|-
+| ITEMSTAT32
+| 
+| armorclass_vs_missile
+|-
+| ITEMSTAT33
+| 
+| armorclass_vs_hth
+|-
+| ITEMSTAT34
+| 
+| normal_damage_reduction
+|-
+| ITEMSTAT35
+| 
+| magic_damage_reduction
+|-
+| ITEMSTAT36
+| CHARSTAT36
+| damageresist
+|-
+| ITEMSTAT37
+| CHARSTAT37
+| magicresist
+|-
+| ITEMSTAT38
+| CHARSTAT38
+| maxmagicresist
+|-
+| ITEMSTAT39
+| CHARSTAT39
+| fireresist
+|-
+| ITEMSTAT40
+| CHARSTAT40
+| maxfireresist
+|-
+| ITEMSTAT41
+| CHARSTAT41
+| lightresist
+|-
+| ITEMSTAT42
+| CHARSTAT42
+| maxlightresist
+|-
+| ITEMSTAT43
+| CHARSTAT43
+| coldresist
+|-
+| ITEMSTAT44
+| CHARSTAT44
+| maxcoldresist
+|-
+| ITEMSTAT45
+| CHARSTAT45
+| poisonresist
+|-
+| ITEMSTAT46
+| CHARSTAT46
+| maxpoisonresist
+|-
+| 
+| 
+| damageaura
+|-
+| ITEMSTAT48
+| 
+| firemindam
+|-
+| ITEMSTAT49
+| 
+| firemaxdam
+|-
+| ITEMSTAT50
+| 
+| lightmindam
+|-
+| ITEMSTAT51
+| 
+| lightmaxdam
+|-
+| ITEMSTAT52
+| 
+| magicmindam
+|-
+| ITEMSTAT53
+| 
+| magicmaxdam
+|-
+| ITEMSTAT54
+| 
+| coldmindam
+|-
+| ITEMSTAT55
+| 
+| coldmaxdam
+|-
+| ITEMSTAT56
+| 
+| coldlength
+|-
+| ITEMSTAT57
+| 
+| poisonmindam
+|-
+| ITEMSTAT58
+| 
+| poisonmaxdam
+|-
+| ITEMSTAT59
+| 
+| poisonlength
+|-
+| ITEMSTAT60
+| 
+| lifedrainmindam
+|-
+| ITEMSTAT61
+| 
+| lifedrainmaxdam
+|-
+| ITEMSTAT62
+| 
+| manadrainmindam
+|-
+| ITEMSTAT63
+| 
+| manadrainmaxdam
+|-
+| ITEMSTAT64
+| 
+| stamdrainmindam
+|-
+| ITEMSTAT65
+| 
+| stamdrainmaxdam
+|-
+| ITEMSTAT66
+| 
+| stunlength
+|-
+| ITEMSTAT67
+| 
+| velocitypercent
+|-
+| ITEMSTAT68
+| 
+| attackrate
+|-
+| 
+| 
+| other_animrate
+|-
+| 
+| 
+| quantity
+|-
+| 
+| 
+| value
+|-
+| ITEMSTAT72
+| 
+| durability
+|-
+| ITEMSTAT73
+| 
+| maxdurability
+|-
+| ITEMSTAT74
+| 
+| hpregen
+|-
+| ITEMSTAT75
+| 
+| item_maxdurability_percent
+|-
+| ITEMSTAT76
+| 
+| item_maxhp_percent
+|-
+| ITEMSTAT77
+| 
+| item_maxmana_percent
+|-
+| ITEMSTAT78
+| 
+| item_attackertakesdamage
+|-
+| ITEMSTAT79
+| 
+| item_goldbonus
+|-
+| ITEMSTAT80
+| 
+| item_magicbonus
+|-
+| ITEMSTAT81
+| 
+| item_knockback
+|-
+| 
+| 
+| item_timeduration
+|-
+| ITEMSTAT83
+| 
+| item_addclassskills
+|-
+| 
+| 
+| 
+|-
+| ITEMSTAT85
+| 
+| item_addexperience
+|-
+| ITEMSTAT86
+| 
+| item_healafterkill (life on kill)
+|-
+| ITEMSTAT87
+| 
+| item_reducedprices
+|-
+| 
+| 
+| 
+|-
+| ITEMSTAT89
+| 
+| item_lightradius
+|-
+| 
+| 
+| 
+|-
+| ITEMSTAT91
+| 
+| item_req_percent
+|-
+| ITEMSTAT92
+| 
+| item_levelreq
+|-
+| ITEMSTAT93
+| CHARSTAT93
+| item_fasterattackrate
+|-
+| ITEMSTAT94
+| 
+| item_levelreqpct
+|-
+| 
+| 
+| 
+|-
+| ITEMSTAT96
+| 
+| item_fastermovevelocity
+|-
+| ITEMSTAT
+| 
+| 
+|-
+| ITEMSTAT
+| 
+| 
+|-
+| ITEMSTAT99
+| CHARSTAT99
+| item_fastergethitrate
+|-
+| 
+| 
+| 
+|-
+| ITEMSTAT101
+| 
+| skill_poison_override_length
+|-
+| ITEMSTAT102
+| CHARSTAT102
+| item_fasterblockrate
+|-
+| 
+| 
+| skill_bypass_undead
+|-
+| 
+| 
+| skill_bypass_demons
+|-
+| ITEMSTAT105
+| CHARSTAT105
+| item_fastercastrate
+|-
+| 
+| 
+| 
+|-
+| ITEMSTAT108
+| 
+| item_restinpeace
+|-
+| ITEMSTAT109
+| CHARSTAT109
+| curse_resistance
+|-
+| ITEMSTAT110
+| 
+| item_poisonlengthresist
+|-
+| ITEMSTAT111
+| 
+| item_normaldamage
+|-
+| ITEMSTAT112
+| 
+| item_howl
+|-
+| ITEMSTAT113
+| 
+| item_stupidity
+|-
+| ITEMSTAT114
+| 
+| item_damagetomana
+|-
+| ITEMSTAT115
+| 
+| item_ignoretargetac
+|-
+| 
+| 
+| Just ask greendude if theres a stat missing here that you want
+|}
+
+== Special Conditions ==
+
+{| class="wikitable"
+! Code
+! Description
+! Usage
+|-
+| CLSK0
+| Amazon Skills
+| ItemDisplay[amc CLSK0>1]: %RED%%NAME%
+|-
+| CLSK1 
+| Sorceress Skills
+| 
+|-
+| CLSK2 
+| Necromancer Skills
+| 
+|-
+| CLSK3
+| Paladin Skills
+| 
+|-
+| CLSK4
+| Barbarian Skills
+| 
+|-
+| CLSK5
+| Druid Skills
+| 
+|-
+| CLSK6
+| Assassin Skills
+| 
+|-
+| ALLSK
+| All Skills
+| ItemDisplay[ALLSK>1]: %BLUE%%NAME%
+|-
+| TABSK0
+| Amazon: Bow & Crossbow
+| ItemDisplay[TABSK0>0]: %ORANGE%%NAME%
+|-
+| TABSK1
+| Amazon: Passive & Magic
+| 
+|-
+| TABSK2
+| Amazon: Javelin & Spear
+| 
+|-
+| TABSK8
+| Sorceress: Fire
+| 
+|-
+| TABSK9
+| Sorceress: Lightning
+| 
+|-
+| TABSK10
+| Sorceress: Cold
+| 
+|-
+| TABSK16
+| Necromancer: Curses
+| 
+|-
+| TABSK17
+| Necromancer: Poison & Bone
+| 
+|-
+| TABSK18
+| Necromancer: Summon
+| 
+|-
+| TABSK24
+| Paladin: Combat
+| 
+|-
+| TABSK25
+| Paladin: Offensive Auras
+| 
+|-
+| TABSK26
+| Paladin: Defensive Auras
+| 
+|-
+| TABSK32
+| Barbarian: Combat
+| 
+|-
+| TABSK33
+| Barbarian: Masteries
+| 
+|-
+| TABSK34
+| Barbarian: Warcries
+| 
+|-
+| TABSK40
+| Druid: Summoning
+| 
+|-
+| TABSK41
+| Druid: Shapeshifting
+| 
+|-
+| TABSK42
+| Druid: Elemental
+| 
+|-
+| TABSK48
+| Assassin: Traps
+| 
+|-
+| TABSK49
+| Assassin: Shadow Disciplines
+| 
+|-
+| TABSK50
+| Assassin: Martial Arts
+| 
+|-
+| ED
+| % effective defense/damage
+| 
+|-
+| RES
+| % to all Resistances
+| ItemDisplay[RES<40]: %RED%F%BLUE%C%YELLOW%L%GREEN%P %NAME%
+|-
+| ID
+| identified
+| 
+|-
+| DEF
+| total defense
+| 
+|-
+| LIFE
+| + life
+| 
+|-
+| IAS
+| increased attack speed
+| 
+|-
+| FCR
+| faster cast rate
+|
+|-
+| GEMLEVEL
+| gem or rune level
+|
+|-
+| RUNE
+| 
+| 
+|-
+| SOCK
+| conditional socket count
+| ItemDisplay[WP8 (SOCK>3 AND SOCK<6)]: %GREEN%%NAME% = Polearms with 4 or 5 sockets have green name
+|-
+| CLVL
+| Character level
+| ItemDisplay[mp1 CLVL>14]: = Hides minor mana potions when char is lvl 15+
+|}
+
+== Skill Codes ==
+
+Skill codes will only work for items that grant skill bonuses when unidentified (implicit). 
+
+{| class="wikitable"
+! Code
+! Skill
+|-
+| SK40
+| Frigerate
+|-
+| SK48
+| Nova
+|-
+| SK58
+| Energy Shield
+|-
+| SK59
+| Blizzard
+|-
+| SK62
+| Hydra
+|-
+| SK64
+| Frozen Orb
+|-
+| SK69
+| Summon Mastery
+|-
+| SK83
+| Desecrate
+|-
+| SK92
+| Poison Nova
+|-
+| SK118
+| Holy Shock
+|-
+| SK119
+| Sanctuary
+|-
+| SK224
+| Lycanthropy
+|-
+| SK225
+| Firestorm
+|-
+| SK226
+| Oak Sage
+|-
+| SK227
+| Summon Spirit Wolf
+|-
+| SK236
+| Heart of Wolverine
+|-
+| SK237
+| Summon Dire Wolf
+|-
+| SK238
+| Rabies
+|-
+| SK244
+| Volcano
+|-
+| SK247
+| Summon Grizzly Bear
+|-
+| SK249
+| Armageddon
+|-
+| SK250
+| Hurricane
+|-
+| SK261
+| Charged Bolt Sentry
+|-
+| SK262
+| Wake of Fire Sentry
+|-
+| SK271
+| Lightning Sentry
+|-
+| SK274
+| Blades of Ice
+|-
+| SK275
+| Dragon Flight
+|-
+| SK276
+| Death Sentry
+|-
+| SK277
+| Blade Shield
+|-
+| SK278
+| Venom
+|}
